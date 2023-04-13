@@ -1,38 +1,60 @@
+.topbar {
+  top: 0;
+  position: fixed;
+  background-color: rgb(210, 199, 199);
+  height: 70px;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.intro {
+  background-color: rgb(162, 150, 202);
+  width: 100vw;
+  overflow: hidden;
+  height: calc(100vh-70px);
+  scroll-snap-align: start; /* Add this property to specify snapping behavior */
+
+  
+}
+
+.contact {
+  background-color: rgb(109, 134, 159);
+  height: calc(100vh - 80px);
+  width: 100vw;
+  overflow: hidden;
+  scroll-snap-align: start; /* Add this property to specify snapping behavior */
+
+}
+
+.test {
+  background-color: rgb(121, 225, 211);
+  height: calc(100vh - 80px);
+  width: 100vw;
+  overflow: hidden;
+  scroll-snap-align: start; /* Add this property to specify snapping behavior */
+}
+
+.work {
+  background-color: rgb(110, 81, 139);
+  height: calc(100vh - 80px);
+  width: 100vw;
+  overflow: hidden;
+  scroll-snap-align: start; /* Add this property to specify snapping behavior */
+
+
+    background-image: url('components/images/main_skills_background.avif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+.section {
+  scroll-snap-type: y mandatory;
+  height: calc(100vh - 80px); /* Adjust the height to account for the topbar height */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 100vh;
 }
